@@ -1,0 +1,8 @@
+set -euxo | pipefail
+
+export LC_ALL=C
+
+source /common.sh
+install_cleanup_trap
+
+echo "hello zack!" > /home/pi/test.txt
